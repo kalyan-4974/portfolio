@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kalyan Kumar Reddy Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /*======================================
+        //--//-->   ABOUT
+        ======================================*/
+
+
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+.skill-mf .progress {
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+      width: 5px;
+  }
+  to {
+      width: 0;
+  }
+}
+
+/* project image zoom effect */
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+.modal-content {
+  text-align: center;
+}
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+}
+.certificate-title {
+  cursor: pointer;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.skill {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.skills span {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 1em;
+  color: #87CEEB;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+/* Navigation styles */
+.navbar-nav .nav-item .nav-link {
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+.about-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Home section layout */
+.home-info-section {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.home-left-col {
+  width: 50%;
+  padding-right: 15px;
+}
+
+.home-right-col {
+  width: 50%;
+  padding-left: 15px;
+}
+
+.about-info p {
+  margin-bottom: 5px;
+}
+
+.title-s {
+  font-weight: bold;
+  color: #ffbd39;
+}
+
+/* Profile image styles */
+.about-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-img img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.about-img img:hover {
+  transform: scale(1.03);
+}
+
+/* About section layout */
+.about-section-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.about-left-column {
+  flex: 1;
+  padding-right: 30px;
+  min-width: 300px;
+}
+
+.about-right-column {
+  flex: 1;
+  padding-left: 30px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  min-width: 300px;
+}
+
+/* Profile details */
+.profile-details {
+  margin-top: 20px;
+}
+
+.profile-item {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.profile-label {
+  font-weight: bold;
+  color: #ffbd39;
+  min-width: 120px;
+  display: inline-block;
+}
+
+.profile-value {
+  color: #fff;
+  flex: 1;
+}
+
+/* Section headings */
+.heading-section {
+  text-align: center;
+  width: 100%;
+}
+
+.heading-section h1.big {
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.heading-section h2.mb-4 {
+  margin: 0 auto 30px auto;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+/* Remove all default underlines */
+.heading-section h2.mb-4:after,
+.heading-section h2.mb-4:before,
+.col-md-10.heading-section h2.mb-4:before,
+.col-md-10.heading-section h2.mb-4:after,
+.col-md-7.heading-section h2.mb-4:before,
+.col-md-7.heading-section h2.mb-4:after {
+  display: none;
+}
+
+/* Custom underline */
+.underline {
+  width: 100%;
+  height: 3px;
+  background-color: #ffbd39;
+  margin: 0 auto 30px auto;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .row.mb-4 .col-5 {
+      width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-left-col, .home-right-col {
+      width: 100%;
+      padding: 0;
+  }
+  
+  .about-section-container {
+      flex-direction: column;
+      padding: 20px;
+  }
+  
+  .about-left-column, .about-right-column {
+      width: 100%;
+      padding: 0;
+      min-width: auto;
+  }
+  
+  .about-right-column {
+      margin-top: 30px;
+      border-left: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding-top: 30px;
+  }
+  
+  .row.mb-4 .col-5 {
+      width: 80%;
+  }
+  
+  .about-img img {
+      max-width: 220px;
+  }
+  
+  .about-info .title-s {
+      min-width: 70px;
+  }
+  
+  .home-info-section {
+      padding: 20px;
+  }
+  
+  .navbar {
+      margin-bottom: 15px;
+  }
+}
+    </style>
+</head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Kalyan Kumar Reddy</a>
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+                    <li class="nav-item"><a href="#work-section" class="nav-link"><span>Work</span></a></li>
+                    <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+                    <li class="nav-item"><a href="cv.pdf" class="nav-link"><span>Download CV</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home-section" class="hero">
+        <div class="home-slider owl-carousel">
+            <div class="slider-item">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row d-flex no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+                        <!-- Left Column (Content from home section) -->
+                        <div class="home-left-col d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
+                            <div class="text">
+                                <span class="subheading">Hello!</span>
+                                <h1 class="mb-4 mt-3">I'm <span>Kalyan Kumar Reddy</span></h1>
+
+                                <!-- Element to contain animated typing -->
+                                <span id="typing-animation"></span>
+
+                                <script>
+                                    // Initialize the typing animation
+                                    const typingAnimationElement = document.getElementById('typing-animation');
+
+                                    // Create an array of typing text
+                                    const typingTexts = [
+                                        'Engineer  ',
+                                        'Software Developer  ',
+                                        'Tech Enthusiast   ',
+                                    ];
+
+                                    // Create a function to display the typing animation for a given text
+                                    function playTypingAnimation(text) {
+                                        // Loop through each character and add it to the element
+                                        for (let i = 0; i < text.length; i++) {
+                                            setTimeout(() => {
+                                                typingAnimationElement.textContent += text[i];
+                                            }, i * 200); // Increase the delay to slow down the typing animation
+                                        }
+
+                                        // Once the animation is complete, reset the text and start over
+                                        setTimeout(() => {
+                                            typingAnimationElement.textContent = '';
+                                            playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                                        }, text.length * 200);
+                                    }
+
+                                    // Start the typing animation loop
+                                    playTypingAnimation(typingTexts[0]);
+                                </script>
+
+                                <br><br>
+                                <h2>Aspiring Data Analyst</h2>
+
+                                <p style="display: flex; gap: 16px; align-items: center; justify-content: start;">
+                                    <!-- LinkedIn Button -->
+                                    <a href="https://www.linkedin.com/in/kalyan-reddy-b" class="btn btn-primary py-2 px-3" 
+                                       style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                                        <i class="fa-brands fa-linkedin fa-lg"></i>
+                                    </a>
+
+                                    <!-- GitHub Button -->
+                                    <a href="https://github.com/kalyan-reddy-b" class="btn btn-primary py-2 px-3" 
+                                       style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                                        <i class="fa-brands fa-github fa-lg"></i>
+                                    </a>
+                                </p>
+
+                                <!-- Load Font Awesome for Icons -->
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+                            </div>
+                        </div>
+                        
+                        <!-- Right Column (Info section with image, name, job role, address, skills) -->
+                        <div class="home-right-col ftco-animate">
+                          <div class="home-info-section">
+                              <div class="row mb-4 justify-content-center"> <!-- Added justify-content-center -->
+                                  <div class="col-5 text-center"> <!-- Added text-center for horizontal centering -->
+                                      <div class="about-img">
+                                          <img src="images/about-me.jpg" class="img-fluid rounded b-shadow-a" alt="Profile Picture">
+                                      </div>
+                                  </div>
+                              </div>
+                          
+                      
+                                <div class="skill-mf">
+                                    <p class="title-s">Skills</p>
+                                    <span>PYTHON</span> <span class="pull-right">80%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span>SQL</span> <span class="pull-right">75%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span>Data Visualization</span> <span class="pull-right">90%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span>Statistical Analysis</span> <span class="pull-right">85%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span>Machine Learning</span> <span class="pull-right">60%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+      <div class="container">
+          <div class="row justify-content-center pb-3">
+              <div class="col-md-12 heading-section ftco-animate text-center">
+                  <h1 class="big">About</h1>
+                  <h2 class="mb-4">About Me</h2>
+                  <div class="underline"></div>
+              </div>
+          </div>
+            
+         
+
+            <div class="about-section-container ftco-animate">
+                <!-- Left Column - About Me Content -->
+                <div class="about-left-column">
+                    <p>I'm a passionate <strong>Data Science</strong> student pursuing my <strong>B.Tech</strong>, specializing in <strong>Data Analytics</strong> and <strong>Machine Learning</strong>.  
+                    I thrive on transforming raw data into meaningful insights to solve real-world challenges.</p>
+                    
+                    <h3>What I Do:</h3>
+                    <ul>
+                        <li>✅ <strong>Data Science & Analytics</strong> – Identifying patterns, uncovering trends, and driving data-driven decisions.</li>
+                        <li>✅ <strong>Machine Learning & AI</strong> – Building predictive models to enhance efficiency and decision-making.</li>
+                    </ul>
+                    
+                    <p>I have hands-on experience with <strong>Python, SQL, Power BI, Tableau, Pandas, NumPy, Matplotlib, and Seaborn</strong>.  
+                    Constantly learning and innovating, I work on projects that sharpen my skills and keep me ahead in the ever-evolving tech landscape.</p>
+                </div>
+                
+                <!-- Right Column - Profile Details -->
+                <div class="about-right-column">
+                    <h3>Professional Profile</h3>
+                    
+                    <div class="profile-details">
+                        <div class="profile-item">
+                            <span class="profile-label">Profile:</span>
+                            <span class="profile-value">Data Science &amp; Analytics</span>
+                        </div>
+                        
+                        <div class="profile-item">
+                            <span class="profile-label">Domain:</span>
+                            <span class="profile-value">Business Intelligence, Market Research, Education Analytics, Environmental Data Analysis</span>
+                        </div>
+                        
+                        <div class="profile-item">
+                            <span class="profile-label">Education:</span>
+                            <span class="profile-value">B.Tech in Data Science</span>
+                        </div>
+                        
+                        <div class="profile-item">
+                            <span class="profile-label">Language:</span>
+                            <span class="profile-value">English, Hindi, Telugu</span>
+                        </div>
+                        
+                        <div class="profile-item">
+                            <span class="profile-label">BI Tools:</span>
+                            <span class="profile-value">Microsoft Power BI, Tableau</span>
+                        </div>
+                        
+                        <div class="profile-item">
+                            <span class="profile-label">Other Skills:</span>
+                            <span class="profile-value">Excel, Git, Data Cleaning, ETL Processes, Basic Cloud Computing</span>
+                        </div>
+                        
+                        <div class="profile-item">
+                            <span class="profile-label">Interest:</span>
+                            <span class="profile-value">Traveling, Data-Driven Research</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!--            WORK                 -->
+    <section class="ftco-section ftco-no-pb" id="work-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+			<h1 class="big big-2">Work</h1>
+			<h2 class="mb-4">Milestones & Achievements</h2>
+			<p>Aspiring Data Analyst with a strong foundation in data science, analytics, and machine learning. Skilled in extracting meaningful insights from data, building predictive models, and leveraging BI tools to support data-driven decision-making. Passionate about continuous learning and solving real-world challenges through data.</p>
+			</div>
+        </div>
+		<!--            VI & ST                 -->
+		<div class="row">
+			<h1 class="big-4">Virtual Internships & Summer Trainings</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<p class="mt-4">
+						Completed a virtual job simulation focused on <strong>data analytics, visualization, and storytelling</strong>.
+						<ul>
+							<li>Worked on <strong>data cleaning, modeling, and visualization</strong> for actionable insights.</li>
+							<li>Developed <strong>interactive dashboards and reports</strong> to present to clients effectively.</li>
+							<li>Gained hands-on experience in <strong>data storytelling and client presentations</strong> for clarity.</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<p class="mt-4">
+						Completed a comprehensive training program in <strong>data analytics, visualization, and machine learning</strong>.
+						<ul>
+							<li>Conducted <strong>Exploratory Data Analysis (EDA)</strong> using Python for insightful results.</li>
+							<li>Utilized <strong>SQL databases</strong> for efficient data extraction and transformation tasks.</li>
+							<li>Created <strong>interactive dashboards and reports</strong> using Power BI for data analysis.</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+			
+		
+
+		<br>
+		<br>
+		
+		
+
+			<!--            Projects                 -->
+			
+			<section id="work-section" class="ftco-section">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-12 text-center mb-5">
+							<h1 class="big-4">Projects</h1>
+							<div class="underline"></div>
+							<p>Below are some of my Data Analytics and Data Science projects using Python, SQL, Power BI, Tableau, and Machine Learning.</p>
+						</div>
+					</div>
+		
+					<div class="row">
+						<div class="col-md-4 mb-4">
+							<div class="blog-entry justify-content-end h-100">
+								<a href="https://github.com/kalyan-reddy-b/Job-Market-Analysis-EDA" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpeg');"></a>
+								<div class="text mt-3 float-right d-block">
+									<a href="https://github.com/kalyan-reddy-b/Job-Market-Analysis-EDA" style="text-decoration: none; color: inherit;">
+										<h3 class="heading">Job Market Data Analysis</h3>
+										<p>Conducted an in-depth analysis of <strong>job market trends</strong>, focusing on various <strong>job roles</strong>, <strong>salary trends</strong>, and <strong>skill demands</strong> across different industries. Utilized <strong>data visualization techniques</strong> to present findings effectively.</p>
+										<div class="skills">
+											<span style="color: #87CEEB;">#Python</span>
+											<span style="color: #87CEEB;">#Pandas</span>
+											<span style="color: #87CEEB;">#Matplotlib</span>
+											<span style="color: #87CEEB;">#Seaborn</span>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+		
+						<div class="col-md-4 mb-4">
+							<div class="blog-entry justify-content-end h-100">
+								<a href="https://github.com/kalyan-reddy-b/IMDb-Movie-Data-Analysis-" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpeg');"></a>
+								<div class="text mt-3 float-right d-block">
+									<a href="https://github.com/kalyan-reddy-b/IMDb-Movie-Data-Analysis-" style="text-decoration: none; color: inherit;">
+										<h3 class="heading">IMDb Movie Data Analysis</h3>
+										<p>Analyzed a comprehensive dataset of <strong>IMDb movies</strong> to identify trends in <strong>ratings</strong>, <strong>genres</strong>, and <strong>box office performance</strong>. The project involved <strong>data cleaning</strong> and <strong>visualization</strong> to derive insights about the film industry.</p>
+										<div class="skills">
+											<span style="color: #87CEEB;">#Python</span>
+											<span style="color: #87CEEB;">#Pandas</span>
+											<span style="color: #87CEEB;">#Matplotlib</span>
+											<span style="color: #87CEEB;">#Seaborn</span>
+											<span style="color: #87CEEB;">#NumPy</span>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+		
+						<div class="col-md-4 mb-4">
+							<div class="blog-entry h-100">
+								<a href="https://github.com/kalyan-reddy-b/Data-Analysis-Dashboard" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpeg');"></a>
+								<div class="text mt-3 float-right d-block">
+									<a href="https://github.com/kalyan-reddy-b/Data-Analysis-Dashboard" style="text-decoration: none; color: inherit;">
+										<h3 class="heading">Amazon Sales Analysis Dashboard</h3>
+										<p>Developed an interactive <strong>dashboard</strong> using <strong>Power BI</strong> to analyze <strong>Amazon sales data</strong>. The dashboard provides insights into <strong>sales trends</strong>, <strong>top-selling products</strong>, and <strong>customer preferences</strong>, enhancing <strong>data-driven decision-making</strong>.</p>
+										<div class="skills">
+											<span style="color: #87CEEB;">#Tableau</span>
+											<span style="color: #87CEEB;">#SQL</span>
+											<span style="color: #87CEEB;">#Excel</span>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+            
+		
+    		
+    
+
+		<!--            Certifications                 -->
+	  
+
+		<!--            Certifications & Courses                 -->
+		<div class="container mt-5">
+			<div class="row">
+				<h1 class="big-4">Certifications & Courses</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate" onclick="openModal('images/certi1.png')">
+						<span class="date">November 2024</span>
+						<h2 class="certificate-title">Supervised Machine Learning</h2>
+						<span class="position">DeepLearning.AI (Coursera)</span>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate" onclick="openModal('images/certi2.png')">
+						<span class="date">October 2024</span>
+						<h2 class="certificate-title">Cloud Computing</h2>
+						<span class="position">NPTEL</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="certificateModal" tabindex="-1" role="dialog" aria-labelledby="certificateModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="certificateModalLabel">Certificate</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<img id="certificateImage" src="" alt="Certificate">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script>
+			function openModal(imageSrc) {
+				document.getElementById('certificateImage').src = imageSrc;
+				$('#certificateModal').modal('show');
+			}
+		</script>
+
+
+		<!--            Achievements                -->
+		<div class="container mt-5">
+			<div class="row">
+				<h1 class="big-4">Achievements</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Competitive Programming</span>
+						<h2 class="certificate-title">Achieved Rank 3,025 / 34,958</h2>
+						<p>In LeetCode Biweekly Contest 150, showcasing strong problem-solving and algorithmic skills.</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">HackerRank Certification</span>
+						<h2 class="certificate-title">5-Star Rating in Java</h2>
+						<p>Demonstrated expertise in object-oriented programming and efficient coding practices.</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">LeetCode</span>
+						<h2 class="certificate-title">Top 18%</h2>
+						<p>Ranked in the top 18% of all users, reflecting strong coding and problem-solving abilities.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!--            Education                 -->
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2022-2026</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">Lovely Professional University</span>
+    					<p class="mt-4">CGPA: 6.9</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-2022</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Sri Chaitanya Jr. College</span>
+    					<p class="mt-4">Grade: 91%</p>
+    				</div>
+				</div>
+    		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="container">
+			<div class="row d-md-flex align-items-center">
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="15">0</strong>
+							<span>Certifications</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="10">0</strong>
+							<span>Projects</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="5">0</strong>
+							<span>Achievements</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="10">0</strong>
+							<span>Hands-on Training</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	  
+	  
+	
+		<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Explore More Projects on <span>GitHub</span></h2>
+					<div class="heading"> 
+						<h4>I am passionate about solving business challenges & uncovering data-driven insights.</h4>
+						<br>
+						<p><a href="https://github.com/kalyan-reddy-b" class="btn btn-primary py-3 px-5">GitHub</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+		
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Jalandhar, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+				<p><a href="tel://+919182041955">+91 91820 41955</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:bhumireddykalyan4@gmail.com">bhumireddykalyan4@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="cv.pdf">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/RBfZ5L1xrpucVbf17" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+			<br>
+			<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+			  <li class="ftco-animate normal-txt">Find me on </li>
+			  <li class="ftco-animate"><a href="https://www.linkedin.com/in/kalyan-reddy-b/"><span class="icon-linkedin"></span></a></li>  
+			  <li class="ftco-animate"><a href="https://github.com/kalyan-reddy-b"><span class="icon-github"></span></a></li>
+			</ul>
+			<br>
+			
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
